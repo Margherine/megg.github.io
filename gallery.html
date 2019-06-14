@@ -1,0 +1,89 @@
+<html>
+ <head>
+
+         <link href="styles.css" rel="stylesheet">
+
+         <title> it's me, Margherine</title>
+
+ </head>
+<body>
+
+<div id="nav-box">
+        <div id="icon">
+          <a href="index.html">
+            <img id="home"class="button" src="pics/home.png">
+            </a>
+        </div>
+    </br>
+        <div id="icon">
+          <a href="gallery.html">
+            <img id="gallery" class="button" src="pics/gallery.png">
+            </a>
+        </div>
+    </br>
+        <div id="icon">
+          <a href="contacts.html">
+              <img id="contacts"class="button" src="pics/contacts.png">
+            </a>
+        </div>
+
+</div>
+
+<div id="content-box">
+      <div id="gallery">
+
+              <h3>GALLERY</h3>
+
+              <p>𝕔𝓵𝕚𝕔𝕜 ❁𝓃 тʰ𝐞 EgGs$ ･:*･ﾟ♥☆ｄ(≧∀≦)ｂﾟ+.ﾟ</p>
+
+              <div id="scrollbar" onclick="enlargePic(event)">
+
+                      <img src="pics/pic0.gif">
+                      <img src="pics/pic1.png">
+                      <img src="pics/pic2.png">
+                      <img src="pics/pic3.png">
+                      <img src="pics/pic4.png">
+                      <img src="pics/pic5.png">
+                      <img src="pics/pic6.png">
+                      <img src="pics/pic7.png">
+                      <img src="pics/pic8.png">
+                      <img src="pics/pic9.png">
+                      <img src="pics/pic10.png">
+
+
+              </div>
+
+              <img id="piclarge" class="large" src="pics/pic0.gif">
+      </div>
+
+</div>
+
+<div id= "box">
+      <div id= "title">
+                <h1 class="text">MEGG</h1>
+                <h2 class="text"> un ovetto poco cotto</h2>
+      </div>
+</div>
+
+<div id= "img-container">
+      <img id="propic" src="pics/propic.png">
+</div>
+
+
+<!-- SCRIPT UNDER -->
+
+<script type="text/javascript">
+
+      function enlargePic(event) {
+        event = event;
+        var targetElement = event.target;
+
+          if(targetElement.tagName == "IMG"){
+            document.getElementById('piclarge').src = targetElement.getAttribute("src");
+          }
+
+      }
+
+</script>
+
+</body>
